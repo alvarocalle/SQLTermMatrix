@@ -1,21 +1,12 @@
 # SQLTermMatrix
 Assignment 2 Data Science at Scale by Washington University (Coursera)
 
-Frontmatter
-
-You will use the command line to complete this assignment.
-
-If you are using the virtual machine, open a Terminal.
-
 Some relevant linux commands and notes for this assignment:
 
     cd directory_name : change directory to directory_name
     ls : list files in the current directory
     sqlite3 reuters.db < sql_filename : execute the queries in the file sql_filenameagainst the database reuters.db. This command assumes reuters.db and sql_filename are in your current directory.
-    Pressing the tab key will attempt to autocomplete any command or filename you are currently typing.
-    For Problem 2, you will use matrix.db instead of reuters.db (Some students do not notice the switch.)
-
-As always, before you start the assignment, get the most recent course materials by issuing the following command: git pull
+    For Problem 2, you will use matrix.db instead of reuters.db
 
 For most of these problems, you will use the reuters.db database consisting of a single table:
 
@@ -91,7 +82,6 @@ Now, since you can represent a sparse matrix as a table, it's reasonable to cons
 Within matrix.db, there are two matrices A and B represented as follows:
 
 A(row_num, col_num, value)
-
 B(row_num, col_num, value)
 
 The matrix A and matrix B are both square matrices with 5 rows and 5 columns each.
@@ -103,8 +93,6 @@ What to turn in: Save the value of cell (2,3) in a file part_g.txt and upload th
 If you're wondering why matrix multiply in a database might be a good idea, consider that advanced databases execute queries in parallel automatically. So it can be quite efficient to process a very large sparse matrix --- millions of rows or columns --- in a database. But a word of warning: In a job interview, don't necessarily tell them you recommend implementing linear algebra in a database. You won't be wrong, but the interviewer might not understand databases as well as you now do, and therefore won't understand when and why this is a good idea. Just say you have done some experiments using databases for analytics.
 
 Problem 3: Working with a Term-Document Matrix
-
-The reuters dataset can be considered a term-document matrix, which is an important representation for text analytics.
 
 The reuters dataset can be considered a term-document matrix, which is an important representation for text analytics.
 
